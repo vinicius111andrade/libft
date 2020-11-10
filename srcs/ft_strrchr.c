@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vde-melo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 12:43:02 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/02/17 14:41:09 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:17:53 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

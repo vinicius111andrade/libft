@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vde-melo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 13:11:00 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/01/23 18:32:06 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:16:34 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "../libft.h"
 
 void	*ft_memset(void *dest, int val, size_t len)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vde-melo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 16:55:57 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/02/04 16:23:43 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:17:27 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "../libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t destsize)
 {

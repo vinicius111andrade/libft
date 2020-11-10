@@ -3,85 +3,91 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vde-melo <vde-melo@student.42sp.org.br>    +#+  +:+       +#+         #
+#    By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/20 13:48:55 by vde-melo          #+#    #+#              #
-#    Updated: 2020/11/09 15:12:39 by vde-melo         ###   ########.fr        #
+#    Updated: 2020/11/10 18:18:22 by vde-melo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
+LIBFT = ft_atoi.c \
+	  ft_isalnum.c \
+	  ft_isalpha.c \
+	  ft_isascii.c \
+	  ft_isdigit.c \
+	  ft_isprint.c \
+	  ft_memset.c \
+	  ft_strlcat.c \
+	  ft_strlen.c \
+	  ft_toupper.c \
+	  ft_tolower.c \
+	  ft_bzero.c \
+	  ft_calloc.c \
+	  ft_memchr.c \
+	  ft_memcmp.c \
+	  ft_memcpy.c \
+	  ft_memccpy.c \
+	  ft_memmove.c \
+	  ft_strchr.c \
+	  ft_strrchr.c \
+	  ft_strdup.c \
+	  ft_strlcpy.c \
+	  ft_strncmp.c \
+	  ft_strnstr.c \
+	  ft_substr.c \
+	  ft_strjoin.c \
+	  ft_putchar_fd.c \
+	  ft_putstr_fd.c \
+	  ft_putendl_fd.c \
+	  ft_putnbr_fd.c \
+	  ft_strtrim.c \
+	  ft_itoa.c \
+	  ft_strmapi.c \
+	  ft_split.c
+
+LIBFT_BONUS = ft_lstnew.c		\
+			ft_lstsize.c		\
+			ft_lstlast.c		\
+			ft_lstdelone.c		\
+			ft_lstadd_back.c	\
+			ft_lstadd_front.c	\
+			ft_lstclear.c		\
+			ft_lstmap.c			\
+			ft_lstiter.c		\
+
 SRCS_PATH = ./srcs/
 
-SRC = $(SRCS_PATH)ft_atoi.c \
-	  $(SRCS_PATH)ft_isalnum.c \
-	  $(SRCS_PATH)ft_isalpha.c \
-	  $(SRCS_PATH)ft_isascii.c \
-	  $(SRCS_PATH)ft_isdigit.c \
-	  $(SRCS_PATH)ft_isprint.c \
-	  $(SRCS_PATH)ft_memset.c \
-	  $(SRCS_PATH)ft_strlcat.c \
-	  $(SRCS_PATH)ft_strlen.c \
-	  $(SRCS_PATH)ft_toupper.c \
-	  $(SRCS_PATH)ft_tolower.c \
-	  $(SRCS_PATH)ft_bzero.c \
-	  $(SRCS_PATH)ft_calloc.c \
-	  $(SRCS_PATH)ft_memchr.c \
-	  $(SRCS_PATH)ft_memcmp.c \
-	  $(SRCS_PATH)ft_memcpy.c \
-	  $(SRCS_PATH)ft_memccpy.c \
-	  $(SRCS_PATH)ft_memmove.c \
-	  $(SRCS_PATH)ft_strchr.c \
-	  $(SRCS_PATH)ft_strrchr.c \
-	  $(SRCS_PATH)ft_strdup.c \
-	  $(SRCS_PATH)ft_strlcpy.c \
-	  $(SRCS_PATH)ft_strncmp.c \
-	  $(SRCS_PATH)ft_strnstr.c \
-	  $(SRCS_PATH)ft_substr.c \
-	  $(SRCS_PATH)ft_strjoin.c \
-	  $(SRCS_PATH)ft_putchar_fd.c \
-	  $(SRCS_PATH)ft_putstr_fd.c \
-	  $(SRCS_PATH)ft_putendl_fd.c \
-	  $(SRCS_PATH)ft_putnbr_fd.c \
-	  $(SRCS_PATH)ft_strtrim.c \
-	  $(SRCS_PATH)ft_itoa.c \
-	  $(SRCS_PATH)ft_strmapi.c \
-	  $(SRCS_PATH)ft_split.c
+SRCS = $(addprefix $(SRCS_PATH), $(LIBFT))
+SRCS_BONUS = $(addprefix $(SRCS_PATH), $(LIBFT_BONUS))
 
-SRC_BONUS = $(SRCS_PATH)ft_lstnew.c			\
-			$(SRCS_PATH)ft_lstsize.c		\
-			$(SRCS_PATH)ft_lstlast.c		\
-			$(SRCS_PATH)ft_lstdelone.c		\
-			$(SRCS_PATH)ft_lstadd_back.c	\
-			$(SRCS_PATH)ft_lstadd_front.c	\
-			$(SRCS_PATH)ft_lstclear.c		\
-			$(SRCS_PATH)ft_lstmap.c			\
-			$(SRCS_PATH)ft_lstiter.c		\
+OBJS = ${SRCS:.c=.o}
+OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 
-OBJ = ${SRC:.c=.o}
-
-OBJ_BONUS = ${SRC_BONUS:.c=.o}
-
-all : $(NAME)
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+INCLUDES = -I libft.h
 
 $(NAME): $(SRC) libft.h
-	gcc -Wall -Wextra -Werror -I./ -c $(SRC)
-	ar rc $(NAME) $(OBJ)
+	${CC} ${CFLAGS} ${INCLUDES} -c $(SRCS)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
 bonus:
-	gcc -Wall -Wextra -Werror -I./ -c $(SRC) $(SRC_BONUS)
-	ar rc $(NAME) $(OBJ) $(OBJ_BONUS)
+	${CC} ${CFLAGS} ${INCLUDES} -c $(SRCS) $(SRCS_BONUS)
+	ar rc $(NAME) $(OBJS) $(OBJS_BONUS)
 	ranlib $(NAME)
+
+all : $(NAME)
 
 clean:
 	rm -f *.o
-	rm -f $(SRCS_PATH)/*.o
+	rm -f */*.o
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY : all clean fclean re
+.PHONY : all clean fclean re bonus

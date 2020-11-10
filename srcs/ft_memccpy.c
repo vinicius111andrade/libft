@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vde-melo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 18:56:32 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/01/28 15:01:08 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:15:02 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "../libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
