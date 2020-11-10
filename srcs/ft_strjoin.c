@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 17:04:35 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:17:30 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:32:47 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

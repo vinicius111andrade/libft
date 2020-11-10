@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 14:54:44 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:17:24 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:32:42 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 size_t	ft_strlcpy(char *d, const char *s, size_t dsize)
 {

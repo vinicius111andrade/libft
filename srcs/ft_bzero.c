@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 14:39:50 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:12:57 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:30:44 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

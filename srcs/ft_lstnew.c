@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/31 17:49:07 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:15:11 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:31:41 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 t_list		*ft_lstnew(void *content)
 {

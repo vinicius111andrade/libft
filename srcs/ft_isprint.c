@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 18:55:02 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:13:55 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:30:19 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 int		ft_isprint(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 17:40:03 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:16:19 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:31:31 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

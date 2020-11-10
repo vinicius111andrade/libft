@@ -6,7 +6,7 @@
 #    By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/20 13:48:55 by vde-melo          #+#    #+#              #
-#    Updated: 2020/11/10 18:18:22 by vde-melo         ###   ########.fr        #
+#    Updated: 2020/11/10 18:35:50 by vde-melo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,14 +62,14 @@ SRCS_PATH = ./srcs/
 SRCS = $(addprefix $(SRCS_PATH), $(LIBFT))
 SRCS_BONUS = $(addprefix $(SRCS_PATH), $(LIBFT_BONUS))
 
-OBJS = ${SRCS:.c=.o}
-OBJS_BONUS = ${SRCS_BONUS:.c=.o}
+OBJS = ${LIBFT:.c=.o}
+OBJS_BONUS = ${LIBFT_BONUS:.c=.o}
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-INCLUDES = -I libft.h
+INCLUDES = -I includes/
 
-$(NAME): $(SRC) libft.h
+$(NAME): $(SRC) includes/libft.h
 	${CC} ${CFLAGS} ${INCLUDES} -c $(SRCS)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)

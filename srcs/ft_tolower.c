@@ -6,11 +6,11 @@
 /*   By: vde-melo <vde-melo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 14:18:12 by vde-melo          #+#    #+#             */
-/*   Updated: 2020/11/10 18:18:02 by vde-melo         ###   ########.fr       */
+/*   Updated: 2020/11/10 18:32:14 by vde-melo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "../includes/libft.h"
 
 int		ft_tolower(int c)
 {
